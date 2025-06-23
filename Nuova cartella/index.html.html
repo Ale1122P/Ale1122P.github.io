@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leonardo Ricci – Una vita, un sogno, una verità</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background: #1e90ff;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 1em;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1e90ff;
+      font-weight: bold;
+    }
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #1e90ff;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.2em;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .store {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product {
+      flex: 1 1 calc(33% - 40px);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1em;
+      text-align: center;
+      background: #fafafa;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .product button {
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background-color: #0f70d1;
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #eee;
+      margin-top: 2em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Leonardo Ricci</h1>
+    <p>Una vita, un sogno, una verità</p>
+  </header>
+
+  <nav>
+    <a href="#chi-sono">Chi Sono</a>
+    <a href="#passione">Passione</a>
+    <a href="#verita">Verità</a>
+    <a href="#amore">Amore</a>
+    <a href="#galleria">Galleria</a>
+    <a href="#store">Store</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <section id="chi-sono">
+    <h2>Chi Sono</h2>
+    <p>Mi chiamo Leonardo Ricci, ho 14 anni e vengo da Castiglione del Lago. La mia è una storia fatta di semplicità, sogni e coraggio. Fin da piccolo ho creduto che si può essere chi si è, senza vergogna.</p>
+  </section>
+
+  <section id="passione">
+    <h2>La Mia Passione</h2>
+    <p>Il calcio è il mio linguaggio. Ogni partita è una sfida con me stesso, un modo per esprimere forza, grinta e passione. Questo sport mi ha insegnato a resistere, cadere, rialzarmi.</p>
+  </section>
+
+  <section id="verita">
+    <h2>La Mia Verità</h2>
+    <p>Vivere apertamente non è sempre facile, ma è necessario. Ho imparato a dire la verità a me stesso e al mondo: sono un ragazzo che ama con sincerità, e oggi sono fiero di chi sono.</p>
+  </section>
+
+  <section id="amore">
+    <h2>L’Amore</h2>
+    <p>Oggi sono sposato con un uomo meraviglioso. Insieme affrontiamo la vita con lealtà, amore e complicità. Il nostro matrimonio è stato un giorno di festa, ma anche di conquista.</p>
+  </section>
+
+  <section id="galleria">
+    <h2>Galleria Fotografica</h2>
+    <div class="gallery">
+      <img src="images/bambino.jpg" alt="Leonardo bambino">
+      <img src="images/calcio.jpg" alt="Leonardo che gioca a calcio">
+      <img src="images/matrimonio.jpg" alt="Leonardo e suo marito">
+      <img src="images/famiglia.jpg" alt="Famiglia e amici">
+    </div>
+  </section>
+
+  <section id="store">
+    <h2>Store Ufficiale</h2>
+    <div class="store">
+      <div class="product">
+        <img src="images/maglietta1.jpg" alt="Maglietta Pride">
+        <h3>Maglietta 'Be You'</h3>
+        <p>100% cotone, disponibile in varie taglie</p>
+        <button>Acquista ora</button>
+      </div>
+      <div class="product">
+        <img src="images/felpa.jpg" alt="Felpa blu Ricci">
+        <h3>Felpa 'Freedom'</h3>
+        <p>Comoda e calda, perfetta per tutti i giorni</p>
+        <button>Acquista ora</button>
+      </div>
+      <div class="product">
+        <img src="images/bracciale.jpg" alt="Braccialetto love">
+        <h3>Bracciale 'Love Wins'</h3>
+        <p>Un simbolo d’amore e identità</p>
+        <button>Acquista ora</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Vuoi scrivermi, propormi un progetto o semplicemente condividere la tua storia?</p>
+    <p>Email: <a href="mailto:ciao@leonardoricci.com">ciao@leonardoricci.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/leonardoricci" target="_blank">@leonardoricci</a></p>
+  </section>
+
+  <footer>
+    © 2025 Leonardo Ricci – Tutti i diritti riservati
+  </footer>
+
+</body>
+</html>
